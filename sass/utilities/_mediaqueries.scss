@@ -1,0 +1,98 @@
+@include xxl {
+  .header{
+    
+    
+    
+  
+       
+  .header-image-intro{
+    width: 600px !important;
+    height: 600px !important;
+
+  }
+  .img-intro{
+    height: 830px !important;
+  }
+  .intro{
+    margin-top: 7% !important;
+    gap: 1.4rem;
+    h1{
+      font-size: 50px !important;
+    }
+  }
+  }
+  
+}
+
+
+
+@include xl{
+
+    .header{
+      
+      
+      .intro{
+        width: 40%;
+      }
+    
+    .navbar{
+      .contact{
+        width: 11% !important;
+        height: 40px !important;
+
+      }
+      
+      .part1{
+        width: 68% !important;
+        font-size: 12px !important;
+      }
+      .nav{
+        width: 55% !important;
+      }
+     
+    }
+ 
+  
+       
+  .header-image-intro{
+    width: 500px !important;
+    height: 500px !important;
+
+  }
+  .img-intro{
+    width:  38rem !important;
+    height: 700px  !important;
+  }
+  }
+  
+
+}
+@include breakpoint(1100px){
+  .header{
+    .navbar{
+      .contact{
+        width: 15% !important;
+        height: 40px !important;
+
+      }
+    }
+    
+    .landing{
+      flex-direction: column !important;
+    }
+    .nav{
+      display: none !important;
+    }
+    
+    .header-image-intro{
+      top: 32% !important;
+      left: -130% !important;
+    }
+  }
+
+}
+@include breakpoint(1669px){
+  .navbar{
+    width: 120% !important;
+  }
+}

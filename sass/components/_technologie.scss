@@ -1,0 +1,31 @@
+.technologie{
+    h3{
+        color: #000;
+        font-size: 28px;
+        font-style: normal;
+        font-family: "mont-800";
+        line-height: 50px; /* 178.571% */
+        text-transform: capitalize;
+    }
+    p{
+        color: #767676;
+        font-size: 19px;
+        font-style: normal;
+        
+        line-height: 40px; /* 210.526% */
+        text-transform: capitalize;
+    }
+    cursor: pointer;
+    padding: 2.5rem 1.5rem 1.5rem 2.5rem;
+    box-shadow: 0 0 4px rgba(0,0,0,.21);
+    width: 600px;
+    height: 200px;
+    border-radius: 7px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    
+    
+
+
+}

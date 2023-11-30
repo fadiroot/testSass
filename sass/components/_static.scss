@@ -1,0 +1,52 @@
+.static{
+    @include flex(column,center,flex-start);
+    border-radius: 32px;
+    border: 1px solid #FFCF2B;  
+    width: 34.5rem;
+    height: 18.3rem;
+    
+    padding: 0 3rem;
+    .int{
+        @include flex(row,flex-start,center,5px);
+        height: 10px;
+        //padding-bottom: 5rem;
+        p{
+            font-family: "mont-800";
+            font-size: 48px;
+            font-style: normal;
+            font-weight: 800;
+            line-height: 90px; /* 187.5% */
+            text-transform: capitalize;
+            background: linear-gradient(212deg, #5F27BD -5.16%, #8E74A4 97.22%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            
+        }
+        span{
+            background: linear-gradient(345deg, #DBBAF0 58.19%, #02CDF3 126.35%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;   
+            font-size: 48px;
+            font-style: normal;
+            font-family: "mont-800";
+            line-height: 90px;
+            text-transform: capitalize;
+        }
+     
+       
+    }
+    .content-static{
+
+        color: #848484;
+        position: relative;
+        top: 16%;
+        
+        font-size: 16px;
+        font-style: normal;
+        line-height: 50px; /* 312.5% */
+        text-transform: capitalize;
+    }
+ 
+}

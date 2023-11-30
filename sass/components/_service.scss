@@ -1,0 +1,24 @@
+.service{
+    width: 35rem;
+    border-radius: 28px;
+    padding: 7rem 0 4.5rem;
+    background-color: #fff;
+    margin-bottom: 5rem;
+    box-shadow: 0 14px 21px 1px rgba(197,162,219,.17);
+    text-align: center;
+    min-height: 28.5rem;
+    img{
+        margin-bottom: 15%;
+    }
+    p{
+        color: var(--purple-text, #542B74);
+        text-align: center;
+        
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 33.5px; /* 152.273% */
+        text-transform: capitalize;
+     
+    }
+}

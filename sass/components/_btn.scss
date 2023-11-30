@@ -1,0 +1,8 @@
+@import '../utilities/mixins';
+.btn{
+    @include centering;
+    border-radius: 61px;
+    padding: 10px;
+    width: 15.8rem;
+    
+}

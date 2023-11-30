@@ -1,0 +1,10 @@
+.tech{
+    width: 16rem;
+    height: 16rem;
+    border-radius: 50%;
+    border: 4.131px solid #764CAE;
+    background: #FFF;
+    position: relative;
+    @include flex(column,center,center)
+
+}
