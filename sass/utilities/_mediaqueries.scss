@@ -27,15 +27,28 @@
 
 
 @include xl{
+  .container{
+    width: 1200px;
+
+  }
 
     .header{
-      
-      
+      height: 95vh !important;
       .intro{
+        gap: 0 !important;
         width: 40%;
+        
+        p{
+          font-size: 18px !important;
+          color: #2e193e;
+          margin-bottom: 5rem !important;
+          
+
+        }
       }
     
     .navbar{
+      width: 114% !important;
       .contact{
         width: 11% !important;
         height: 40px !important;
@@ -43,11 +56,15 @@
       }
       
       .part1{
-        width: 68% !important;
+        width: 80% !important;
         font-size: 12px !important;
       }
       .nav{
-        width: 55% !important;
+        width: 62% !important;
+        a{
+          font-size: 15px;
+
+        }
       }
      
     }
@@ -64,12 +81,226 @@
     height: 700px  !important;
   }
   }
+  .about-us{
+    width: 110% ;
+    gap: 5rem !important;
+  }
+  .container-about{
+    max-width: 99%;
+    height: 60%;
+    overflow-x: auto;
+    @include flex(row,center,center);
+    margin:0 auto;
+    .about{
+      width: 38.4rem !important;
+      height: 43.2rem !important;
+
+    }
+  }
+  .container-statistics{
+    
+    overflow-x: auto;
+    max-width: 97%;
+    
+
+  }
+  .statistics{
+    gap: 2rem !important;
+  }
+  .mid-services{
+    img{
+      height: 62rem;
+      width: 50rem;
+    }
+
+  }
+  .service{
+    width:29rem !important;
+  }
+  .section-projects{
+    height: fit-content !important;
+    margin-bottom: 8% !important;
+  }
+  .projects{
+    flex-wrap: wrap !important;
+    gap: 4rem !important;
+    justify-content: center !important;
+    margin-left: 9%;
+    width: 87% !important;
+    .project{
+      max-width: 420px;
+      padding: 10px;
+      border: 1px solid #f8f7ff;
+      box-shadow: 0 0 2px #dedede;
+      min-height: 48rem;
+      border-radius: 10px;
+    }
+  }
+  .how-work{
+    img{
+      width: 90%;
+    }
+    .quations-container{
+      width: 1210px !important;
+      height: 240px !important;
+      p{font-size: 23px !important;}
+      .icon{
+        width: 157px !important;
+        height: 145.786px !important;
+        img{
+          width: 50%;
+        }
+      }
+    }
+  }
+  .technologie-container{
+    flex-direction: column !important;
+    img{
+      width: 53%;
+    }
+    .technologie{
+      width: 1000px !important;
+      height: 180px !important;
+      h3{
+        font-size: 22px !important;
+      }
+      p{
+        font-size: 16px !important;
+      }
+    }
+  }
+  .partners-container{
+    width: 88%;
+    margin: 0 auto;
+    overflow-x: scroll;
+    background-color: red($color: #000000);
+  }
+  .partners{
+    
+    width: 80%;
+    margin: 0 auto;
+    img{
+      width: 150px;
+      margin-right: 37px;
+    }
+   
+  }
+  .contacts{
+    width: 80% !important;
+  }
+  
+
+  
+
+
+
   
 
 }
-@include breakpoint(1100px){
+@include lg{
+  .our-services{
+    justify-content: center !important
+    ;
+    gap: 2  rem !important
+  }
+  .service{
+    width: 20rem !important;
+  }
+
+
+
+}
+@include breakpoint(1300px){
   .header{
+    .touch{
+      height: 7rem !important;
+      width: 22rem !important;
+
+    }
+      .navbar{
+        width: 110% !important;
+        .nav{
+          width: 53% !important;
+          a{
+            font-size: 11px !important;
+          }
+        }
+       
+      }
+      h1{
+        font-size:  30px !important;
+      }
+     
+      
+}
+.container-about{
+  transform: translateX(-50px);
+  max-width: 93%;
+  .about{
+  margin-right: 2rem;
+  
+  
+  .icon-about{
+    width: 72px !important;
+    height: 72px !important;
+  }
+}
+}
+.container-statistics{
+  overflow-x: auto;
+  max-width: 80%;
+  transform: translateX(9%);
+  margin-bottom: 10%;
+  .statistics{
+    overflow-x: auto;
+    width: 150%;
+
+  }}
+  .how-work{
+  .quations-container{
+    width:1000px !important;
+    height: 185px !important;
+    .quation{
+      gap:20px !important
+    }
+    .icon{
+      width: 102px !important;
+    height: 106.786px !important;
+    }
+    p{
+      font-size: 18px;
+    }
+  }}
+  .contacts{
+    h5{
+      font-size: 15px !important;
+    }
+    p{
+      font-size: 12px !important;
+
+    }
+  }
+
+
+} 
+
+@include breakpoint(1100px){
+  .container{
+    width: 1000px;
+  }
+  .ser{
+    display: flex;
+  }
+
+  .header{
+    min-height: 150vh !important  ; 
     .navbar{
+      .icon-nav{
+        
+        @include flex(column,center,center,7px) ;
+        display:  flex !important;
+        
+      }
       .contact{
         width: 15% !important;
         height: 40px !important;
@@ -79,20 +310,67 @@
     
     .landing{
       flex-direction: column !important;
+      align-items: center !important;
+      .intro{
+        align-items: center !important;
+        width: 99% !important;
+        h3{
+          font-size: 25px !important;
+        }
+        h1{
+          text-align: center;
+         
+          font-size: 37px !important  ;
+
+        }
+        p{
+          text-align: center;
+        }
+      }
+      
+      
     }
     .nav{
       display: none !important;
     }
     
     .header-image-intro{
-      top: 32% !important;
-      left: -130% !important;
+      position: relative !important;
+      top: 60px!important;
+      left: -8% !important;
+      height: 600px !important;
+      width: 600px !important;
+  
+      
     }
   }
+  .section-our-services{
+    .our-services{
+      flex-direction: column !important;
+      .ser{
+        flex-direction: row !important ;
+        justify-content: center !important  ;
+        gap:5rem !important ;
+        height: 32rem !important;
+      }
+    .mid-services{
+      order: -1;
+
+    }    }
+
+
+  }
+
+
 
 }
 @include breakpoint(1669px){
   .navbar{
     width: 120% !important;
   }
+}
+@include breakpoint(1550px){
+  
+
+
 }

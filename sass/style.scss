@@ -34,8 +34,9 @@ html{
 }
 body{
 
-    height: 500vh;
+    
     font-size: 1.6rem; 
+    overflow-x: hidden;
     font-family: "mont-600",sans-serif;;
     
     
@@ -47,15 +48,38 @@ body{
 .header{
     
    
-    
+    .img-intro{
+           
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 33%;
+        height: 100vh;
+        border-radius: 0px 0px 0px 233px;
+        background-color: #28104E;}
     padding-top: 38px;
     height: 100vh;
     background-color: #F8F7FF;
     
     .navbar{
+        
+        .icon-nav{
+            display: none;
+            height: 200px;
+            
+            
+            div{
+                width: 3rem;
+                height: 2px;
+                
+                background-color: #9854CB;
+                ;
+                
+            }
+            }
     
         @include flex(row ,space-between,center);
-        width: 125%;
+        max-width: 120%;
         height: 94px;
         padding-left: 15.7%;
         padding-right: 40px;
@@ -147,26 +171,18 @@ body{
             
             }
         }
-        .img-intro{
-           
-            position: absolute;
-            top: 0;
-            right: 0;
-            width: 33%;
-            height: 100vh;
-            border-radius: 0px 0px 0px 233px;
-            background-color: #28104E;
+       
             .header-image-intro{
                 width: 739px;
                 height: 776px;
                 position: absolute;
-                top: 15%;
-                left: -28%;
+                top: 14%;
+                left: 48%;
                 
 
             }
 
-        }
+        
 
     }
 }
@@ -200,6 +216,7 @@ body{
         text-transform: capitalize;
         margin-bottom: 6rem
     }
+    
     .about-us{
         @include flex(row,space-between,center);
         @import 'components/about';
@@ -210,11 +227,12 @@ body{
     }
     .statistics{
         margin-top: 9%;
-        @include flex(row,space-between,center);
+        @include flex(row,space-between,center,4rem);
         @import 'components/static';
     }
 }
 .section-our-services{
+    position: relative;
     margin-top: 9%;
     background-color: #F8F7FF;
     padding: 2rem 2rem 7rem 2rem;
@@ -233,17 +251,25 @@ body{
     }
     .mid-services{
         @include flex(column,center,center,50px);
-        .touch{
-            @include touch
-
-        }
+       
+    }
+ 
+    .touch{
+        @include touch;
+        position: absolute;
+        bottom: 0;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
 
     }
-    @include breakpoint()
+
 }
 }
 .section-projects{
     margin-top: 2%;
+    height: 80vh;
     .title-projects{
         @include title
     }
@@ -256,16 +282,16 @@ body{
     }
 }
 .section-how-work{
-    margin-bottom: 35%;
+    margin-bottom: 10%;
     .how-work{
         margin-top: 8%;
 
-        @include flex(column,space-between,center,8rem);
+        @include flex(column,space-between,center,6rem);
     }
-    height: 100vh;
+    
     position: relative;
     top:6%;
-    padding-top: 70px;
+    padding-top: 10px;
     background-color: #F8F7FF;
     .title-how-work{
         @include title
@@ -292,7 +318,7 @@ body{
         border-radius: 38px;
         padding: 6rem 5rem;
         
-        transform: translateY(16%);
+        transform: translateY(45%);
         @include flex(row,space-around);   
         .quation{
             
